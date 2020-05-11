@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import "./SideDrawer.css"   
 import logo from '../../logo.png'
 import AllOurProductsDropdown from "../dropdownsmenu/dropdownmenuallourproducts/AllOurProductsDropdown"
+import PartnerShop from '../dropdownsmenu/dropdownmenupartnershop/PartnerShopList'
 
 export class SideDrawer extends Component {
     render() {
@@ -10,7 +11,7 @@ export class SideDrawer extends Component {
                 <img src={logo} alt="" className="img"/>
                 <ul className="mobile-menu accordion-menu">
                     <AllOurProductsDropdown></AllOurProductsDropdown>
-                   <li><a>Boutique partenaire</a></li>
+                    <PartnerShop></PartnerShop>
                    <li><a >Promotions</a></li>
                    <li><a>Le bon coin</a></li>
                    <li><a>Nos Showrooms</a></li>

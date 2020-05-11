@@ -1,0 +1,34 @@
+.accordion-menu li.menu-item.has-sub>a {
+    padding-right: 33px;
+}
+.accordion-menu li.menu-item>a {
+    position: relative;
+    display: block;
+    outline: medium none;
+    text-decoration: none;
+    text-align: left;
+    margin: 1px 0 0;
+    padding: 5px 6px;
+    line-height: 25px;
+    font-weight: 400;
+    transition: .25s;
+    font-family: inherit;
+    font-size: inherit;
+}
+#side-nav-panel .accordion-menu li:not(:last-child) {
+    border-bottom: 1px solid #242527;
+}
+.accordion-menu>li, .accordion-menu ul.sub-menu>li {
+    position: relative;
+}
+.accordion-menu li.menu-item {
+    margin: 0;
+}
+
+.accordion-menu ul.sub-menu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+

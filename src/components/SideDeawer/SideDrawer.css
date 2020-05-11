@@ -6,9 +6,11 @@
     top: 0;
     left: 0;
     position: fixed;
-    width: 45%;
-    max-width: 400%;
-    z-index: 200;
+    width: 260px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-size: .9em;
+    z-index: 9001;
     padding-top: 27px;
 }
 
@@ -113,54 +115,12 @@
 #side-nav-panel .accordion-menu .arrow:before {
     content: '\e81c';
 }
-/*.accordion-menu .open>.arrow:before {
+.accordion-menu .open>.arrow:before {
     content: "";
 }
 .accordion-menu .arrow:before {
     content: "";
-}*/
-
-
-
-#side-nav-panel .accordion-menu li.menu-item > a, #side-nav-panel .menu-custom-block a {
-    color: #ffffff;
 }
 
-.accordion-menu li.menu-item.has-sub>a {
-    padding-right: 33px;
-}
-.accordion-menu li.menu-item>a {
-    position: relative;
-    display: block;
-    outline: medium none;
-    text-decoration: none;
-    text-align: left;
-    margin: 1px 0 0;
-    padding: 5px 6px;
-    line-height: 25px;
-    font-weight: 400;
-    transition: .25s;
-    font-family: inherit;
-    font-size: inherit;
-}
-#side-nav-panel .accordion-menu li:not(:last-child) {
-    border-bottom: 1px solid #242527;
-}
-.accordion-menu>li, .accordion-menu ul.sub-menu>li {
-    position: relative;
-}
-.accordion-menu li.menu-item {
-    margin: 0;
-    background-color:#f9bc06 ;
-}
 
-.accordion-menu ul.sub-menu {
-    display: none;
-    list-style: none;
-    margin: 0;
-    padding: 0 0 0 10px;
-}
 
-.all-products-menu-item {
-    background-color: #f9bc06;
-}
