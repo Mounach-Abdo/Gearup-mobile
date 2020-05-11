@@ -48,14 +48,17 @@
     text-align: -webkit-match-parent;
     color: #ffffff;
 }
-
+.icon{
+    display: block;
+    margin-bottom: 19px;
+}
 .side-drawer li a,.side-drawer div a{ 
     position: relative;
     display: block;
     text-decoration: none;
     text-align: left;
     margin: 1px 0 0;
-    padding: 5px 6px;
+    padding: 10px 6px;
     line-height: 25px;
     font-weight: 400;
     transition: .25s;
@@ -65,6 +68,17 @@
     text-transform: uppercase;
     color: #ffffff;
     outline: none !important;
+}
+
+.side-drawer li a i{
+    text-decoration: none;
+    text-align: left;
+    line-height: 25px;
+    font-weight: 400;
+    transition: .25s;
+    font-size: .9em;
+    padding-right: 5px;
+   
 }
 
 .side-drawer a{
@@ -117,10 +131,10 @@
 }
 .accordion-menu .open>.arrow:before {
     content: "";
+    font-family: 'Font Awesome 5 Free';
 }
 .accordion-menu .arrow:before {
     content: "";
+    font-family: 'Font Awesome 5 Free';
 }
-
-
 

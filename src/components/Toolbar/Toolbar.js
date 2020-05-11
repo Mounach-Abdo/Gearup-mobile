@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Toolbar.css'
-import DrawerToggleButton from '../SideDeawer/DrawerToggleButtton'
+import DrawerToggleButton from '../SideDrawer/DrawerToggleButtton'
 import logo from '../../logo.png'
 
 export class Toolbar extends Component {

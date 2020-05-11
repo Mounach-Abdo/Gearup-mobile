@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import "./SideDrawer.css"   
 import logo from '../../logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPercent, faStar, faMapMarkerAlt, faTags } from '@fortawesome/free-solid-svg-icons'
 import AllOurProductsDropdown from "../dropdownsmenu/dropdownmenuallourproducts/AllOurProductsDropdown"
 import PartnerShop from '../dropdownsmenu/dropdownmenupartnershop/PartnerShopList'
 
@@ -11,10 +13,10 @@ export class SideDrawer extends Component {
                 <img src={logo} alt="" className="img"/>
                 <ul className="mobile-menu accordion-menu">
                     <AllOurProductsDropdown></AllOurProductsDropdown>
-                    <PartnerShop></PartnerShop>
-                   <li><a >Promotions</a></li>
-                   <li><a>Le bon coin</a></li>
-                   <li><a>Nos Showrooms</a></li>
+                   <li><i className=".fa, .fas"><FontAwesomeIcon  icon={faTags} color="white"/></i><PartnerShop></PartnerShop></li>
+                   <li><a href="/"><i className=".fa, .fas"><FontAwesomeIcon  icon={faPercent}/></i>Promotions</a></li>
+                   <li><a href="/"><i className=".fa, .fas"><FontAwesomeIcon icon={faStar}/></i>Le bon coin</a></li>
+                   <li><a href="/"><i className=".fa, .fas"><FontAwesomeIcon icon={faMapMarkerAlt}/></i> Nos Showrooms</a></li>
                    </ul>
                    <div><a href="/"  style={{color: '#f9bc06'}}>? INFO COVID-19</a></div>
                    <ul>

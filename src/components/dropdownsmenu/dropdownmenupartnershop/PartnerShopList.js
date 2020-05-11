@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import "./PartnerShopList.css" 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTags } from '@fortawesome/free-solid-svg-icons'
 
 export class PartnerShop extends Component {
     constructor(){
@@ -22,7 +24,7 @@ export class PartnerShop extends Component {
          render() {
            return (
             <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children has-sub" >
-                  <a className=" " onClick={this.showDropdownMenu} href="#COMPOSANTS PC GAMER">Boutique partenaire</a>
+                  <a className=" " onClick={this.showDropdownMenu} href="#COMPOSANTS PC GAMER"><i className=".fa, .fas"><FontAwesomeIcon  icon={faTags} color="white"/></i>Boutique partenaire</a>
                 <span className="arrow" onClick={this.showDropdownMenu}></span>
                 { this.state.displayMenu ? (
                      <ul  className="sub-menu" style={{display:"block"}}>
